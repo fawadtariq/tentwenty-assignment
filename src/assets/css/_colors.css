@@ -1,0 +1,91 @@
+:root {
+    --color-primary: rgb(1, 42, 56);
+    --color-secondary: rgb(194, 222, 232);
+    --color-success: #059669;
+    --color-info: #06b6d4;
+    --color-warning: #f59e0b;
+    --color-pending: #d97706;
+    --color-danger: #dc2626;
+    --color-light: rgb(255, 255, 255);
+    --color-dark: rgb(0, 0, 0);
+    --color-slate-50: #f8fafc;
+    --color-slate-100: #f1f5f9;
+    --color-slate-200: #e2e8f0;
+    --color-slate-300: #cbd5e1;
+    --color-slate-400: #94a3b8;
+    --color-slate-500: #64748b;
+    --color-slate-600: #475569;
+    --color-slate-700: #334155;
+    --color-slate-800: #1e293b;
+    --color-slate-900: #0f172a;
+}
+
+/*=================================
+=====BACKGROUND COLOR CLASSES======
+==================================*/
+
+@for $i from 1 to 100 {
+    .bg-primary-$i{
+        background-color: rgb(1 42 56 / $i%);
+    }
+}
+
+.bg-primary{
+    background-color: var(--color-primary);
+}
+.bg-secondary{
+    background-color: var(--color-secondary);
+}
+.bg-success{
+    background-color: var(--color-success);
+}
+.bg-info{
+    background-color: var(--color-info);
+}
+.bg-warning{
+    background-color: var(--color-warning);
+}
+.bg-pending{
+    background-color: var(--color-pending);
+}
+.bg-danger{
+    background-color: var(--color-danger);
+}
+.bg-light{
+    background-color: var(--color-light);
+}
+.bg-dark{
+    background-color: var(--color-dark);
+}
+
+/*=================================
+=======TEXT COLOR CLASSES==========
+==================================*/
+
+.text-primary{
+    color: var(--color-primary);
+}
+.text-secondary{
+    color: var(--color-secondary);
+}
+.text-success{
+    color: var(--color-success);
+}
+.text-info{
+    color: var(--color-info);
+}
+.text-warning{
+    color: var(--color-warning);
+}
+.text-pending{
+    color: var(--color-pending);
+}
+.text-danger{
+    color: var(--color-danger);
+}
+.text-light{
+    color: var(--color-light);
+}
+.text-dark{
+    color: var(--color-dark);
+}

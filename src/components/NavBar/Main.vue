@@ -1,0 +1,21 @@
+<template>
+    <div class="bg-light mt-px-20 w-pr-97 h-px-81 mx-auto -intro-y">
+        <div class="grid grid-cols-5 items-center h-full px-px-50">
+            <div class="justify-self-start col-cover-1 intro-x">LOGO</div>
+            <div class="grid grid-cols-5 col-cover-3">
+               <div class="intro-y">The Firm</div>
+               <div class="intro-y">Solutions</div>
+               <div class="intro-y">News &amp; Insights</div>
+               <div class="intro-y">Careers</div>
+               <div class="intro-y">Locations</div>
+            </div>
+            <div class="justify-self-end col-cover-1 -intro-x">
+                <CTAButton/>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+    import CTAButton from '@/components/CTAButton/Main.vue'
+</script>
