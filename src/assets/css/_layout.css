@@ -1,7 +1,10 @@
 *{
     font-family: 'suisse_regular';
+    font-weight: 400;
 }
-
+body{
+    margin: 0;
+}
 /*======================================
 ================CONTAINER===============
 =======================================*/
@@ -50,69 +53,19 @@
     display: grid;
 }
 
-.grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr))
+@for $i from 1 to 12{
+    .grid-cols-$i {
+        grid-template-columns: repeat($i, minmax(0, 1fr))
+    }
+    .grid-rows-$i {
+        grid-template-rows: repeat($i, minmax(0, 1fr))
+    }
+    .col-cover-$i {
+        grid-column: span $i / span $i
+    }
 }
 
-.grid-cols-10 {
-    grid-template-columns: repeat(10, minmax(0, 1fr))
-}
 
-.grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr))
-}
-
-.grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr))
-}
-
-.grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr))
-}
-
-.grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr))
-}
-
-.grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-}
-
-.grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr))
-}
-
-.grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr))
-}
-
-.col-cover-12 {
-    grid-column: span 12 / span 12
-}
-
-.col-cover-8 {
-    grid-column: span 3 / span 3
-}
-
-.col-cover-6 {
-    grid-column: span 6 / span 6
-}
-
-.col-cover-4 {
-    grid-column: span 4 / span 4
-}
-
-.col-cover-3 {
-    grid-column: span 3 / span 3
-}
-
-.col-cover-2 {
-    grid-column: span 2 / span 2
-}
-
-.col-cover-1 {
-    grid-column: span 1 / span 1
-}
 
 .items-center{
     align-items: center;
@@ -137,4 +90,7 @@
 }
 .justify-self-end{
     justify-self: end;
+}
+.justify-between{
+    justify-content: space-between;
 }

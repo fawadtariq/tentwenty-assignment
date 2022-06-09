@@ -1,0 +1,13 @@
+h1{
+    font-size: 80px;
+    line-height: 84px;
+}
+
+h2{
+    font-size: 58px;
+    line-height: 110%;
+}
+
+.text-xs{
+    font-size: 16px;
+}

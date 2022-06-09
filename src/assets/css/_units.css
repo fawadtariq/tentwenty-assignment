@@ -6,11 +6,19 @@
     width: 100%;
 }
 
+.w-auto{
+    width: auto;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
 .w-viewport{
     width: 100vw;
 }
 
-@for $i from 1 to 100 {
+@for $i from 1 to 181 {
     $pxValue: calc($i * 1px);
     .w-px-$i{
         width: $pxValue
@@ -28,8 +36,8 @@
     height: 100%;
 }
 
-.w-viewport{
-    height: 100vw;
+.h-viewport{
+    height: 100vh;
 }
 
 @for $i from 1 to 100 {
@@ -158,11 +166,16 @@
 
 @for $i from 1 to 100 {
     $pxValue: calc($i * 1px);
-    .p-px-$i{
-        margin: $pxValue
+    $NpxValue: calc($i * (-1px));
+    
+    .m-px-$i{
+        margin: $pxValue    
     }
     .mt-px-$i{
         margin-top: $pxValue
+    }
+    .-mt-px-$i{
+        margin-top: $NpxValue
     }
     .mb-px-$i{
         margin-bottom: $pxValue
@@ -204,5 +217,12 @@
     .my-mr-$i{
         margin-top: $i%;
         margin-bottom: $i%
+    }
+}
+
+@for $i from 1 to 100{
+    $pxValue: calc($i * 1px);
+    .text-px-$i{
+        font-size: $pxValue
     }
 }
