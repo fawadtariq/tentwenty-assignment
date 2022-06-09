@@ -9,10 +9,10 @@
     "
   >
     <div class="h-pr-50 w-pr-90 grid mx-auto">
-      <p class="text-light-70 pl-pr-10 text-xs -intro-x">Home / Solutions</p>
+      <p data-aos="fade-right" data-aos-delay="400" class="text-light-70 pl-pr-10 text-xs">Home / Solutions</p>
       <div class="pl-pr-10">
-        <h1 class="text-light -intro-x">Solutions</h1>
-        <p style="max-width:30%" class="-mt-px-30 text-light-50 text-xs -intro-x">
+        <h1 data-aos='fade-right' class="text-light">Solutions</h1>
+        <p data-aos='fade-right' data-aos-delay="200" style="max-width:30%" class="-mt-px-30 text-light-50 text-xs">
           Aliquet mauris est nascetur viverra. Rhoncus tellus quis felis ac
           venenatis urna elit eget.
         </p>

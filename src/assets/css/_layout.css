@@ -63,12 +63,21 @@ body{
     .col-cover-$i {
         grid-column: span $i / span $i
     }
+    .row-cover-$i {
+        grid-row: span $i / span $i
+    }
 }
 
 
 
 .items-center{
     align-items: center;
+}
+.align-self-start{
+    align-self: flex-start;
+}
+.align-self-end{
+    align-self: flex-end;
 }
 .self-center{
     align-self: center;

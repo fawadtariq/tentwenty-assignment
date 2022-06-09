@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.7",
     "lucide-vue-next": "^0.61.0",
     "path": "^0.12.7",

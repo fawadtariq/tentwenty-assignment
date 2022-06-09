@@ -8,6 +8,25 @@ h2{
     line-height: 110%;
 }
 
+h1,h2{
+    margin-top: 0;
+}
+
 .text-xs{
     font-size: 16px;
+}
+
+.text-m{
+    font-size: 24px;
+}
+
+.text-xl{
+    font-size: 30px;
+}
+
+.footer-nav{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 0px;
 }

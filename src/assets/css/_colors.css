@@ -76,6 +76,9 @@
     .text-primary-$i{
         color: rgb(1 42 46 / $i%);
     }
+    .text-dark-$i{
+        color: rgb(0 0 0 / $i%);
+    }
 }
 .text-primary{
     color: var(--color-primary);

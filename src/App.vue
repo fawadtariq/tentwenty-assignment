@@ -1,4 +1,10 @@
 <script setup>
+import { onMounted } from "vue";
+import 'aos/dist/aos.css'
+import AOS from "aos";
+
+
+
 import NavBar from '@/components/NavBar/Main.vue'
 import Banner from '@/components/Banner/Main.vue'
 
@@ -10,6 +16,12 @@ import DistributionSection from '@/components/Sections/Distribution/Main.vue'
 import BrokerageSection from '@/components/Sections/Brokerage/Main.vue'
 import InvestmentSection from '@/components/Sections/Investment/Main.vue'
 import FintechSection from '@/components/Sections/Fintech/Main.vue'
+import Footer from '@/components/Footer/Main.vue'
+
+
+onMounted(()=>{
+  AOS.init();
+})
 </script>
 
 <template>
@@ -22,5 +34,6 @@ import FintechSection from '@/components/Sections/Fintech/Main.vue'
   <BrokerageSection/>
   <InvestmentSection/>
   <FintechSection/>
+  <Footer/>
 </template>
 
