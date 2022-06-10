@@ -1,0 +1,228 @@
+/*======================================
+==============WIDTH UNITS===============
+=======================================*/
+
+.w-full{
+    width: 100%;
+}
+
+.w-auto{
+    width: auto;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.w-viewport{
+    width: 100vw;
+}
+
+@for $i from 1 to 181 {
+    $pxValue: calc($i * 1px);
+    .w-px-$i{
+        width: $pxValue
+    }
+    .w-pr-$i{
+        width: $i%
+    }
+}
+
+/*======================================
+==============HEIGHT UNITS===============
+=======================================*/
+
+.h-full{
+    height: 100%;
+}
+
+.h-viewport{
+    height: 100vh;
+}
+
+@for $i from 1 to 100 {
+    $pxValue: calc($i * 1px);
+    $vpValue: calc($i * 1vh);
+    .h-px-$i{
+        height: $pxValue
+    }
+    .h-pr-$i{
+        height: $i%
+    }
+    .h-vp-$i{
+        height: $vpValue
+    }
+}
+
+
+/*======================================
+==============PADDING UNITS===============
+=======================================*/
+
+.pt-auto{
+    padding-top:auto;
+}
+.pb-auto{
+    padding-bottom:auto;
+}
+
+.pr-auto{
+    padding-right:auto;
+}
+.pl-auto{
+    padding-left:auto;
+}
+
+.px-auto{
+    padding-right:auto;
+    padding-left:auto;
+}
+
+.py-auto{
+    padding-bottom:auto;
+    padding-top:auto;
+}
+
+@for $i from 1 to 100 {
+    $pxValue: calc($i * 1px);
+    .p-px-$i{
+        padding: $pxValue
+    }
+    .pt-px-$i{
+        padding-top: $pxValue
+    }
+    .pb-px-$i{
+        padding-bottom: $pxValue
+    }
+    .pl-px-$i{
+        padding-left: $pxValue
+    }
+    .pr-px-$i{
+        padding-right: $pxValue
+    }
+    .px-px-$i{
+        padding-right: $pxValue;
+        padding-left: $pxValue
+    }
+    .py-px-$i{
+        padding-bottom: $pxValue;
+        padding-top: $pxValue
+    }
+
+    .p-pr-$i{
+        padding: $i%
+    }
+    .pt-pr-$i{
+        padding-top: $i%
+    }
+    .pb-pr-$i{
+        padding-bottom: $i%
+    }
+    .pl-pr-$i{
+        padding-left: $i%
+    }
+    .pr-pr-$i{
+        padding-right: $i%
+    }
+    .px-pr-$i{
+        padding-right: $i%;
+        padding-left: $i%;
+    }
+    .py-pr-$i{
+        padding-top: $i%;
+        padding-bottom: $i%
+    }
+}
+
+
+
+/*======================================
+==============MARGIN UNITS===============
+=======================================*/
+
+.mt-auto{
+    margin-top:auto;
+}
+.mb-auto{
+    margin-bottom:auto;
+}
+
+.mr-auto{
+    margin-right:auto;
+}
+.ml-auto{
+    margin-left:auto;
+}
+
+.mx-auto{
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.my-auto{
+    margin-bottom:auto;
+    margin-top: auto;
+}
+
+@for $i from 1 to 100 {
+    $pxValue: calc($i * 1px);
+    $NpxValue: calc($i * (-1px));
+    
+    .m-px-$i{
+        margin: $pxValue    
+    }
+    .mt-px-$i{
+        margin-top: $pxValue
+    }
+    .-mt-px-$i{
+        margin-top: $NpxValue
+    }
+    .mb-px-$i{
+        margin-bottom: $pxValue
+    }
+    .ml-px-$i{
+        margin-left: $pxValue
+    }
+    .mr-px-$i{
+        margin-right: $pxValue
+    }
+    .mx-px-$i{
+        margin-right: $pxValue;
+        margin-left: $pxValue
+    }
+    .my-px-$i{
+        margin-bottom: $pxValue;
+        margin-top: $pxValue
+    }
+
+    .p-mr-$i{
+        margin: $i%
+    }
+    .mt-mr-$i{
+        margin-top: $i%
+    }
+    .mb-mr-$i{
+        margin-bottom: $i%
+    }
+    .ml-mr-$i{
+        margin-left: $i%
+    }
+    .mr-mr-$i{
+        margin-right: $i%
+    }
+    .mx-mr-$i{
+        margin-right: $i%;
+        margin-left: $i%;
+    }
+    .my-mr-$i{
+        margin-top: $i%;
+        margin-bottom: $i%
+    }
+}
+
+@for $i from 1 to 100{
+    $pxValue: calc($i * 1px);
+    .text-px-$i{
+        font-size: $pxValue
+    }
+}
