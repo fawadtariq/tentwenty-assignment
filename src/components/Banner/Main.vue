@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div v-if="state.reveal"
     class="
       bg-primary-acc
       h-viewport
@@ -19,4 +19,23 @@
       </div>
     </div>
   </div>
+  <div id="banner-scene" class=" w-viewport h-viewport" style="position:absolute;top:0"></div>
 </template>
+
+<script setup>
+import scene from './scene.js';
+import { onMounted, reactive } from 'vue'
+const emit = defineEmits(['reveal'])
+const state = reactive({reveal: false})
+
+onMounted(() => {
+  
+  $(document).on('intro-complete', function(){
+    console.log('emit')
+    state.reveal = true;
+    emit('reveal');
+  });
+  scene($('#banner-scene')[0]);
+
+})
+</script>

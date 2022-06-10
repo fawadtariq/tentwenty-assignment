@@ -15,6 +15,7 @@
         </div>
       </div>
       <div
+        id="cta_box"
         class="bg-secondary grid grid-cols-1 items-center justify-items-center"
       >
         <div class="align-self-end grid items-center justify-items-center">
@@ -65,3 +66,14 @@
 <script setup>
 import CTAButton from "@/components/CTAButton/Main.vue";
 </script>
+
+<style>
+#cta_box{
+  background-image: url('@/assets/img/footer-cta-bg.png');
+      background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    background-position-y: center;
+}
+</style>

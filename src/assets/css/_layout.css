@@ -1,6 +1,10 @@
 *{
     font-family: 'suisse_regular';
     font-weight: 400;
+    overflow-x: hidden;
+}
+*:not(body, html){
+    overflow-y: hidden;
 }
 body{
     margin: 0;
